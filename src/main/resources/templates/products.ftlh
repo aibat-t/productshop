@@ -27,7 +27,7 @@
     </#list>
     <hr>
     <h3>Create new product</h3>
-    <form action="/product/create" method="post">
+    <form action="/product/create" method="post" enctype="multipart/form-data">
         <label for="title">
             Title:
             <input type="text" name="title">
@@ -51,6 +51,21 @@
         <label for="author">
             Author:
             <input type="text" name="author">
+        </label>
+        <br>
+        <label for="author">
+            First Image:
+            <input type="file" name="file1">
+        </label>
+        <br>
+        <label for="author">
+            Second image:
+            <input type="file" name="file2">
+        </label>
+        <br>
+        <label for="author">
+            Third image:
+            <input type="file" name="file3">
         </label>
         <br>
         <button type="submit">Add product</button>

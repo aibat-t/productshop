@@ -8,8 +8,10 @@
     <title>Product shop</title>
 </head>
 <body>
-    <h1>Product information</h1
-    <hr>
+    <h1>Product information</h1>
+    <#list images as img>
+        <img src="/images/${img.id}" height="60px" alt="${img.name}"/><br><br>
+    </#list>
     <label for="title">
         Title:
         <input type="text" disabled name="title" value="${product.title}">
